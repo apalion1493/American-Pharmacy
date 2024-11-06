@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('components/head.html', {
+'title': 'Category'
+})
+
+<body class="">
+    <main class="flex flex-col justify-between min-h-screen">
+        @@include('components/Header.html')
+
+        <section class="py-16 md:py-10">
+            <div class="container">
+                <div class="grid grid-cols-12 gap-5">
+                    <div class="col-span-3 lg:col-span-12">
+                        <div
+                            class="flex flex-col sticky top-2 bg-white border border-primary py-6 px-5 lg:p-4 rounded-lg ">
+                            <h3 class="text-h6 font-semibold leading-[120%] text-dark-green mb-8">Categories</h3>
+                            <ul class="flex flex-col gap-4 lg:flex-row flex-wrap lg:gap-x-0 sm:gap-y-2">
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="botulinum-icon mr-2"></i> Botulinum</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="mesotherapy-icon mr-2"></i> Mesotherapy</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="dermal-fillers-icon mr-2"></i> Dermal Fillers</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="lipolitics-icon mr-2"></i> Lipolitics</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="placental-extract-icon mr-2"></i> Placental Extract</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="creams-serum-icon mr-2"></i> Creams & Serum</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="Rheumatology-icon mr-2"></i> RHEUMATOLOGY</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="ortophedics-icon mr-2"></i> Ortophedics</a>
+                                </li>
+                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
+                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
+                                        href="#"><i class="ginecology-icon mr-2"></i> Ginecology</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-span-9 lg:col-span-12">
+                        <h1 class="text-h3 font-semibold text-dark-green mb-3 md:text-h5">Botulinum</h1>
+                        <div class="flex justify-between items-center mb-8 sm:flex-col sm:items-start sm:gap-y-3">
+                            <p class="text-gray-2">1-20 of 50 results </p>
+                            @@include('components/filter-1.html')
+                        </div>
+                        <div class="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-6">
+                            @@include('components/product-card.html', {
+                            'style': 'mb-2',
+                            'img': 'https://dummyimage.com/420x260',
+                            'alt': 'title',
+                            'name': 'Product name',
+                            'title': 'title img',
+                            'link': 'Product-page.html',
+                            'ID': 'test1'
+                            })
+                            @@include('components/product-card.html', {
+                            'style': 'mb-2',
+                            'img': 'https://dummyimage.com/420x260',
+                            'alt': 'title',
+                            'name': 'Product name',
+                            'title': 'title img',
+                            'link': 'Product-page.html',
+                            'ID': 'test2'
+                            })
+                        </div>
+                        <div class="flex justify-between mt-8">
+                            <button type='button' aria-label='Button pagination prev'
+                                class="button w-14 h-14 rounded-xl border transition group border-primary bg-white inline-flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16"
+                                    fill="none">
+                                    <path
+                                        d="M1.0851 8.72248C1.00196 8.62769 0.935991 8.51508 0.890982 8.39111C0.845974 8.26713 0.822807 8.13422 0.822807 8C0.822807 7.86578 0.845974 7.73287 0.890982 7.6089C0.935991 7.48492 1.00196 7.37231 1.0851 7.27752L6.76685 0.783391C6.9345 0.591778 7.16187 0.484131 7.39896 0.484131C7.63604 0.484131 7.86341 0.591778 8.03106 0.783391C8.1987 0.975004 8.29288 1.23489 8.29288 1.50587C8.29288 1.77685 8.1987 2.03673 8.03106 2.22835L2.97962 8L8.03106 13.7717C8.1987 13.9633 8.29288 14.2232 8.29288 14.4941C8.29288 14.7651 8.1987 15.025 8.03106 15.2166C7.86341 15.4082 7.63604 15.5159 7.39896 15.5159C7.16187 15.5159 6.9345 15.4082 6.76685 15.2166L1.0851 8.72248ZM25.1772 9.02045H1.7172V6.97955H25.1772V9.02045Z"
+                                        fill="#007F84" />
+                                </svg>
+                            </button>
+
+                            <div class='flex items-center gap-3'>
+                                <div class='pagination-num active'>
+                                    1</div>
+                                <div class='pagination-num'>
+                                    2</div>
+                                <div class='pagination-num'>
+                                    3</div>
+                                <div class='pagination-num'>
+                                    ...</div>
+                                <div class='pagination-num'>
+                                    10</div>
+                            </div>
+
+                            <button type='button' aria-label='Button pagination next'
+                                class="button w-14 h-14 rounded-xl border transition group border-primary bg-primary hover:bg-primary inline-flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16"
+                                    fill="none">
+                                    <path
+                                        d="M24.9149 8.72248C24.998 8.62769 25.064 8.51508 25.109 8.39111C25.154 8.26713 25.1772 8.13422 25.1772 8C25.1772 7.86578 25.154 7.73287 25.109 7.6089C25.064 7.48492 24.998 7.37231 24.9149 7.27752L19.2331 0.783391C19.0655 0.591778 18.8381 0.484131 18.601 0.484131C18.364 0.484131 18.1366 0.591778 17.9689 0.783391C17.8013 0.975004 17.7071 1.23489 17.7071 1.50587C17.7071 1.77685 17.8013 2.03673 17.9689 2.22835L23.0204 8L17.9689 13.7717C17.8013 13.9633 17.7071 14.2232 17.7071 14.4941C17.7071 14.7651 17.8013 15.025 17.9689 15.2166C18.1366 15.4082 18.364 15.5159 18.601 15.5159C18.8381 15.5159 19.0655 15.4082 19.2331 15.2166L24.9149 8.72248ZM0.822754 9.02045H24.2828V6.97955H0.822754V9.02045Z"
+                                        fill="white" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        @@include('components/Footer.html')
+    </main>
+
+    @@include('components/modal-window.html')
+    @@include('components/wishlistBlock.html')
+    @@include('components/script.html')
+</body>
+
+</html>
