@@ -103,6 +103,11 @@
 	@apply block h-[24px] w-[24px] bg-100-auto bg-center bg-no-repeat;
 }
 
+.Cart-icon-white {
+	background: url(../img/icons/Cart-icon-white.svg);
+	@apply block h-[30px] w-[30px] bg-100-auto bg-center bg-no-repeat;
+}
+
 .searchResultBlock {
 	@apply absolute left-0 top-16 z-[31] hidden w-full overflow-hidden;
 }
@@ -367,6 +372,14 @@
 	&.active {
 		display: block;
 	}
+}
+
+.img-radial {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 100%;
+	background: radial-gradient(50% 50% at 50% 50%, rgba(0, 127, 132, 0.15) 44.34%, rgba(255, 255, 255, 0.00) 100%);
 }
 
 @media (max-width: 1279.98px) {

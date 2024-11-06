@@ -635,9 +635,6 @@ html {
 .-left-\[660px\]{
   left: -660px;
 }
-.-left-\[735px\]{
-  left: -735px;
-}
 .-right-1{
   right: -0.25rem;
 }
@@ -646,9 +643,6 @@ html {
 }
 .-right-\[20px\]{
   right: -20px;
-}
-.-right-\[25px\]{
-  right: -25px;
 }
 .-right-full{
   right: -100%;
@@ -703,9 +697,6 @@ html {
 }
 .top-\[60px\]{
   top: 60px;
-}
-.top-\[65px\]{
-  top: 65px;
 }
 .-z-10{
   z-index: -10;
@@ -1036,9 +1027,6 @@ html {
 }
 .max-w-\[500px\]{
   max-width: 500px;
-}
-.max-w-\[510px\]{
-  max-width: 510px;
 }
 .max-w-\[595px\]{
   max-width: 595px;
@@ -1796,6 +1784,16 @@ html {
   background-repeat: no-repeat;
 }
 
+.Cart-icon-white {
+  background: url(../img/icons/Cart-icon-white.svg);
+  display: block;
+  height: 30px;
+  width: 30px;
+  background-size: 100% auto;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .searchResultBlock{
   position: absolute;
   left: 0px;
@@ -2176,6 +2174,14 @@ html {
 }
 .searchContainer:not(.mob-version).active {
   display: block;
+}
+
+.img-radial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 127, 132, 0.15) 44.34%, rgba(255, 255, 255, 0) 100%);
 }
 
 @media (max-width: 1279.98px) {
@@ -2568,6 +2574,15 @@ html {
   }
   .minsm\:w-\[400px\]{
     width: 400px;
+  }
+}
+
+@media (min-width: 768px){
+  .minmd\:items-start{
+    align-items: flex-start;
+  }
+  .minmd\:justify-center{
+    justify-content: center;
   }
 }
 
