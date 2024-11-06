@@ -1637,7 +1637,7 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clock-icon {
-  background: url(../img/clock.svg);
+  background: url(../img/icons/clock.svg);
   display: block;
   height: 22px;
   width: 22px;
@@ -1647,7 +1647,7 @@ html {
 }
 
 .phone-small {
-  background: url(../img/call-small.svg);
+  background: url(../img/icons/call-small.svg);
   display: block;
   height: 20px;
   width: 20px;
@@ -1657,7 +1657,7 @@ html {
 }
 
 .phone-icon {
-  background: url(../img/calling.svg);
+  background: url(../img/icons/calling.svg);
   display: block;
   height: 30px;
   width: 30px;
@@ -1667,7 +1667,7 @@ html {
 }
 
 .mail-icon {
-  background: url(../img/mail.svg);
+  background: url(../img/icons/mail.svg);
   display: block;
   height: 17px;
   width: 22px;
@@ -1677,7 +1677,7 @@ html {
 }
 
 .botulinum-icon {
-  background: url(../img/Botulinum.svg);
+  background: url(../img/icons/Botulinum.svg);
   display: block;
   height: 30px;
   width: 30px;
@@ -1687,7 +1687,7 @@ html {
 }
 
 .dermal-fillers-icon {
-  background: url(../img/Dermal-Fillers.svg);
+  background: url(../img/icons/Dermal-Fillers.svg);
   display: block;
   height: 30px;
   width: 30px;
@@ -1697,7 +1697,7 @@ html {
 }
 
 .ginecology-icon {
-  background: url(../img/Ginecology.svg);
+  background: url(../img/icons/Ginecology.svg);
   display: block;
   height: 30px;
   width: 30px;
@@ -1707,7 +1707,7 @@ html {
 }
 
 .lipolitics-icon {
-  background: url(../img/Lipolitics.svg);
+  background: url(../img/icons/Lipolitics.svg);
   display: block;
   height: 30px;
   width: 30px;
@@ -1717,7 +1717,7 @@ html {
 }
 
 .creams-serum-icon {
-  background: url(../img/Creams&Serum.svg);
+  background: url(../img/icons/Creams&Serum.svg);
   display: block;
   height: 30px;
   width: 30px;
@@ -1727,7 +1727,7 @@ html {
 }
 
 .placental-extract-icon {
-  background: url(../img/Placental-Extract.svg);
+  background: url(../img/icons/Placental-Extract.svg);
   display: block;
   height: 30px;
   width: 30px;
@@ -1737,7 +1737,7 @@ html {
 }
 
 .ortophedics-icon {
-  background: url(../img/Ortophedics.svg);
+  background: url(../img/icons/Ortophedics.svg);
   display: block;
   height: 30px;
   width: 30px;
@@ -1747,7 +1747,7 @@ html {
 }
 
 .Rheumatology-icon {
-  background: url(../img/Rheumatology.svg);
+  background: url(../img/icons/Rheumatology.svg);
   display: block;
   height: 30px;
   width: 30px;
@@ -1757,7 +1757,7 @@ html {
 }
 
 .mesotherapy-icon {
-  background: url(../img/Mesotherapy.svg);
+  background: url(../img/icons/Mesotherapy.svg);
   display: block;
   height: 30px;
   width: 30px;
@@ -1767,7 +1767,7 @@ html {
 }
 
 .heart-filled-icon {
-  background: url(../img/Heart-filled.svg);
+  background: url(../img/icons/Heart-filled.svg);
   display: block;
   height: 24px;
   width: 24px;
@@ -1777,7 +1777,7 @@ html {
 }
 
 .heart-icon {
-  background: url(../img/Heart.svg);
+  background: url(../img/icons/Heart.svg);
   display: block;
   height: 24px;
   width: 24px;
@@ -1787,7 +1787,7 @@ html {
 }
 
 .heart-white-icon {
-  background: url(../img/Heart-white.svg);
+  background: url(../img/icons/Heart-white.svg);
   display: block;
   height: 24px;
   width: 24px;
@@ -1911,7 +1911,7 @@ html {
   -moz-appearance: none;
   -o-appearance: none;
   appearance: none;
-  background-image: url(../img/select-icon-bottom.svg);
+  background-image: url(../img/icons/select-icon-bottom.svg);
   background-size: 16px 27px;
 }
 
@@ -1932,11 +1932,11 @@ html {
 }
 
 .small-select.open {
-  background-image: url(../img/select-icon-top.svg);
+  background-image: url(../img/icons/select-icon-top.svg);
 }
 
 .i-percents {
-  background: url(../img/i-percents-100.svg);
+  background: url(../img/icons/i-percents-100.svg);
   display: block;
   height: 70px;
   width: 70px;
@@ -1946,7 +1946,7 @@ html {
 }
 
 .i-delivery {
-  background: url(../img/i-delivery.svg);
+  background: url(../img/icons/i-delivery.svg);
   display: block;
   height: 70px;
   width: 70px;
@@ -1956,7 +1956,7 @@ html {
 }
 
 .i-customer {
-  background: url(../img/i-customer.svg);
+  background: url(../img/icons/i-customer.svg);
   display: block;
   height: 70px;
   width: 70px;
@@ -1966,7 +1966,7 @@ html {
 }
 
 .i-offer {
-  background: url(../img/i-offer.svg);
+  background: url(../img/icons/i-offer.svg);
   display: block;
   height: 70px;
   width: 70px;
@@ -2219,7 +2219,7 @@ html {
 }
 
 .check-icon {
-  background: url(../img/Check-icon.svg) no-repeat center;
+  background: url(../img/icons/Check-icon.svg) no-repeat center;
   background-size: 100% auto;
   display: block;
   width: 8px;
@@ -2227,7 +2227,7 @@ html {
 }
 
 .check-icon-white {
-  background: url(../img/Check-icon-white.svg) no-repeat center;
+  background: url(../img/icons/check-icon-white.svg) no-repeat center;
   background-size: 100% auto;
   display: block;
   width: 8px;
@@ -2235,7 +2235,7 @@ html {
 }
 
 .Search-icon {
-  background: url(../img/Search-icon.svg) no-repeat center;
+  background: url(../img/icons/Search-icon.svg) no-repeat center;
   background-size: 100% auto;
   display: block;
   width: 30px;
