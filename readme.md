@@ -20,6 +20,6 @@ https://apalion1493.github.io/American-Pharmacy/build/Product-page.html <br/>
 
 
 New <br/>
-https://apalion1493.github.io/American-Pharmacy/build/Login.html <br/>
-https://apalion1493.github.io/American-Pharmacy/build/Forgot-Password.html <br/>
-https://apalion1493.github.io/American-Pharmacy/build/Registration.html <br/>
+https://apalion1493.github.io/American-Pharmacy/dist/Login.html <br/>
+https://apalion1493.github.io/American-Pharmacy/dist/Forgot-Password.html <br/>
+https://apalion1493.github.io/American-Pharmacy/dist/Registration.html <br/>
