@@ -65,7 +65,20 @@
                             'errorStyle': 'hidden'
                             })
                         </div>
-                        <div class="col-span-6 md:col-span-12"></div>
+                        <div class="col-span-6 md:col-span-12">
+                            <span class="text-base text-dark-green leading-[130%] mb-2 block">Gender</span>
+                            <div class="flex items-center gap-x-3">
+                                <label for="genderMale" class="flex w-full flex-1 h-[47px] cursor-pointer items-center justify-start gap-2 rounded border border-border-color-3 bg-white px-4 py-2 has-[:disabled]:opacity-75">
+                                    <input id="genderMale" type="radio" class="before:content[''] relative h-4 w-4 appearance-none rounded-full border border-primary bg-white before:invisible before:absolute before:left-1/2 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-slate-100 checked:border-primary checked:bg-primary checked:before:visible focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-primary checked:focus:outline-primary disabled:cursor-not-allowed" name="radioDefault" value="genderMale" checked >
+                                    <span class="text-h10">Male</span>
+                                </label>
+                                <label for="genderFemale" class="flex w-full flex-1 h-[47px] cursor-pointer items-center justify-start gap-2 rounded border border-border-color-3 bg-white px-4 py-2 has-[:disabled]:opacity-75">
+                                    <input id="genderFemale" type="radio" class="before:content[''] relative h-4 w-4 appearance-none rounded-full border border-primary bg-white before:invisible before:absolute before:left-1/2 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-slate-100 checked:border-primary checked:bg-primary checked:before:visible focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-primary checked:focus:outline-primary disabled:cursor-not-allowed" name="radioDefault" value="genderFemale">
+                                    <span class="text-h10">Female</span>
+                                </label>
+                            </div>
+
+                        </div>
                         <div class="col-span-6 md:col-span-12">
                             @@include('components/select-input.html', {
                             'common-style': 'flex-1 w-full',

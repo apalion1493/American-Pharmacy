@@ -3,3 +3,7 @@ textarea::placeholder {
   opacity: 1;
   color: #33333366;
 }
+
+.checked\:bg-primary:checked {
+  background-color: #007F84 !important;
+}

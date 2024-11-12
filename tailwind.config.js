@@ -78,6 +78,7 @@ module.exports = {
 				white: '#ffffff',
 				'black-1': '#333333',
 				'dark-green': '#1E3B41',
+				'currentColor': '#007F84',
 				purple: '#3f3cbb',
 				midnight: '#121063',
 				metal: '#565584',
