@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('components/head.html', {
+'title': 'Registration Details'
+})
+
+<body class="">
+<main class="flex flex-col justify-between min-h-screen">
+    @@include('components/Header.html')
+
+    <section class="py-20 lg:py-10">
+        <div class="container grid grid-cols-12 gap-6">
+            <div class="col-span-3 lg:hidden"></div>
+            <div class="col-span-6 lg:col-span-12">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-h3 font-semibold leading-[120%] mb-4 md:text-h6">Registration <span
+                            class="italic text-primary font-normal">Details</span></h2>
+                    <p class="text-base text-center">Already have an account? <a class="text-primary font-semibold underline" href="#">Click here</a> to login.</p>
+                    <form class="mt-12 grid grid-cols-12 gap-6 md:gap-x-0 w-full">
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/input.html', {
+                            'type': 'text',
+                            'common-style': 'flex-1',
+                            'idInput': 'FirstNameId',
+                            'placeholder': '',
+                            'label': 'First Name',
+                            'styleInput': '',
+                            'styleLabel': '',
+                            'errorStyle': 'hidden'
+                            })
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/input.html', {
+                            'type': 'text',
+                            'common-style': 'flex-1',
+                            'idInput': 'LastNameId',
+                            'placeholder': '',
+                            'label': 'Last name',
+                            'styleInput': '',
+                            'styleLabel': '',
+                            'errorStyle': 'hidden'
+                            })
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/input.html', {
+                            'type': 'text',
+                            'common-style': 'flex-1',
+                            'idInput': 'MailId',
+                            'placeholder': 'example@youremail.com',
+                            'label': 'Email',
+                            'styleInput': '',
+                            'styleLabel': '',
+                            'errorStyle': 'hidden'
+                            })
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/input.html', {
+                            'type': 'text',
+                            'common-style': 'flex-1',
+                            'idInput': 'PhoneId',
+                            'placeholder': '+123 456 789',
+                            'label': 'Phone',
+                            'styleInput': '',
+                            'styleLabel': '',
+                            'errorStyle': 'hidden'
+                            })
+                        </div>
+                        <div class="col-span-6 md:col-span-12"></div>
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/select-input.html', {
+                            'common-style': 'flex-1 w-full',
+                            'idSelect': 'custom-select',
+                            'styleLabel': '',
+                            'label': 'State'
+                            })
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/input.html', {
+                            'type': 'password',
+                            'common-style': 'flex-1',
+                            'idInput': 'passwordId',
+                            'placeholder': '*********',
+                            'label': 'Password',
+                            'styleInput': '',
+                            'styleLabel': '',
+                            'errorStyle': 'hidden'
+                            })
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/input.html', {
+                            'type': 'password',
+                            'common-style': 'flex-1',
+                            'idInput': 'passwordId2',
+                            'placeholder': '*********',
+                            'label': 'Confirm Password',
+                            'styleInput': '',
+                            'styleLabel': '',
+                            'errorStyle': 'hidden'
+                            })
+                        </div>
+                        <div class="col-span-12">
+                            @@include('components/checkbox.html', {
+                            'text': 'I have read and agree to the <a class="underline" href="#">Terms</a>',
+                            'errorText': 'Please confirm that you agree',
+                            'styleText': '',
+                            'errorStyle': '',
+                            })
+                        </div>
+                        <div class="col-span-12">
+                            <button class="button test2 px-6 py-3 w-full rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary group"
+                                    type="submit" aria-label="Login">
+                                <span class="font-medium">Register</span>
+                                <svg class="ml-4" xmlns="http://www.w3.org/2000/svg" width="23" height="11" viewBox="0 0 23 11" fill="none">
+                                    <path class="group-hover:fill-primary transition-all" d="M21.9543 5.9676C22.006 5.90858 22.0471 5.83847 22.0751 5.76128C22.1031 5.6841 22.1176 5.60135 22.1176 5.51778C22.1176 5.43421 22.1031 5.35146 22.0751 5.27428C22.0471 5.19709 22.006 5.12698 21.9543 5.06796L18.4168 1.0247C18.3124 0.9054 18.1708 0.838379 18.0232 0.838379C17.8756 0.838379 17.7341 0.9054 17.6297 1.0247C17.5253 1.144 17.4667 1.3058 17.4667 1.47452C17.4667 1.64323 17.5253 1.80503 17.6297 1.92433L20.7747 5.51778L17.6297 9.11123C17.5253 9.23053 17.4667 9.39233 17.4667 9.56105C17.4667 9.72976 17.5253 9.89156 17.6297 10.0109C17.7341 10.1302 17.8756 10.1972 18.0232 10.1972C18.1708 10.1972 18.3124 10.1302 18.4168 10.0109L21.9543 5.9676ZM0.882812 6.15311H21.5607V4.88245H0.882812V6.15311Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-span-3 lg:hidden"></div>
+        </div>
+    </section>
+
+    @@include('components/Footer.html')
+</main>
+
+@@include('components/modal-window.html')
+@@include('components/wishlistBlock.html')
+@@include('components/script.html')
+</body>
+
+</html>

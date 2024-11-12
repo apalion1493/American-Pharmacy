@@ -9,7 +9,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Category</title>
+  <title>Registration Details</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -20,8 +20,8 @@
 </head>
 
 <body class="">
-    <main class="flex flex-col justify-between min-h-screen">
-        <header class="flex flex-col @@commonStyle">
+<main class="flex flex-col justify-between min-h-screen">
+    <header class="flex flex-col @@commonStyle">
     <div class="bg-primary py-6">
         <div class="container flex items-center w-full">
             <a class="lg:max-w-[150px] minlg:min-w-[200px] mr-10" href="#">
@@ -351,167 +351,127 @@
     </div>
 </header>
 
-        <section class="py-16 md:py-10">
-            <div class="container">
-                <div class="grid grid-cols-12 gap-5">
-                    <div class="col-span-3 lg:col-span-12">
-                        <div
-                            class="flex flex-col sticky top-2 bg-white border border-primary py-6 px-5 lg:p-4 rounded-lg ">
-                            <h3 class="text-h6 font-semibold leading-[120%] text-dark-green mb-8">Categories</h3>
-                            <ul class="flex flex-col gap-4 lg:flex-row flex-wrap lg:gap-x-0 sm:gap-y-2">
-                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
-                                        href="#"><i class="botulinum-icon mr-2"></i> Botulinum</a>
-                                </li>
-                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
-                                        href="#"><i class="mesotherapy-icon mr-2"></i> Mesotherapy</a>
-                                </li>
-                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
-                                        href="#"><i class="dermal-fillers-icon mr-2"></i> Dermal Fillers</a>
-                                </li>
-                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
-                                        href="#"><i class="lipolitics-icon mr-2"></i> Lipolitics</a>
-                                </li>
-                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
-                                        href="#"><i class="placental-extract-icon mr-2"></i> Placental Extract</a>
-                                </li>
-                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
-                                        href="#"><i class="creams-serum-icon mr-2"></i> Creams & Serum</a>
-                                </li>
-                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
-                                        href="#"><i class="Rheumatology-icon mr-2"></i> RHEUMATOLOGY</a>
-                                </li>
-                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
-                                        href="#"><i class="ortophedics-icon mr-2"></i> Ortophedics</a>
-                                </li>
-                                <li class="lg:w-1/3 md:w-1/2 sm:w-full">
-                                    <a class="inline-flex items-center text-h8 font-medium leading-[150%] transition-colors hover:text-primary"
-                                        href="#"><i class="ginecology-icon mr-2"></i> Ginecology</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="col-span-9 lg:col-span-12">
-                        <h1 class="text-h3 font-semibold text-dark-green mb-3 md:text-h5">Botulinum</h1>
-                        <div class="flex justify-between items-center mb-8 sm:flex-col sm:items-start sm:gap-y-3">
-                            <p class="text-gray-2">1-20 of 50 results </p>
-                            <div class="relative w-[201px] max-w-full custom-select">
-    <button
-        class="w-full bg-white py-2 px-4 border border-primary rounded-md cursor-pointer flex justify-between items-center select-button"
-        role="combobox" aria-labelledby="select button" aria-haspopup="listbox" aria-expanded="false"
-        aria-controls="select-dropdown">
-        <span class="flex items-center gap-2">
-            <span class="text-black-1">Sort by:</span>
-            <!-- Здесь будет отображаться выбранное значение -->
-            <span class="selected-value text-black-1"></span>
-        </span>
-        <span class="arrow transform transition-transform duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                <path d="M18.9623 11.8052L14.096 16.6715L9.22974 11.8052" stroke="#007F84" stroke-linecap="round" />
-            </svg>
-        </span>
-    </button>
-    <ul
-        class="absolute z-50 w-full mt-2 max-h-52 overflow-y-auto bg-white border border-primary rounded-md shadow-lg select-dropdown transform scale-y-0 opacity-0 transition-all duration-500 ease-in-out origin-top invisible">
-        <li role="option" class="flex items-center gap-4 px-4 py-2 cursor-pointer hover:bg-gray-200">
-            <input type="radio" id="latest" name="sort-option" class="absolute left-0 opacity-0" />
-            <label for="latest" class="w-full flex items-center gap-4">
-                Latest
-            </label>
-        </li>
-        <li role="option" class="flex items-center gap-4 px-4 py-2 cursor-pointer hover:bg-gray-200">
-            <input type="radio" id="newest" name="sort-option" class="absolute left-0 opacity-0" />
-            <label for="newest" class="w-full flex items-center gap-4">
-                Newest
-            </label>
-        </li>
-    </ul>
+    <section class="py-20 lg:py-10">
+        <div class="container grid grid-cols-12 gap-6">
+            <div class="col-span-3 lg:hidden"></div>
+            <div class="col-span-6 lg:col-span-12">
+                <div class="flex flex-col items-center">
+                    <h2 class="text-h3 font-semibold leading-[120%] mb-4 md:text-h6">Registration <span
+                            class="italic text-primary font-normal">Details</span></h2>
+                    <p class="text-base text-center">Already have an account? <a class="text-primary font-semibold underline" href="#">Click here</a> to login.</p>
+                    <form class="mt-12 grid grid-cols-12 gap-6 md:gap-x-0 w-full">
+                        <div class="col-span-6 md:col-span-12">
+                            <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 " for="FirstNameId">First Name</label>
+    <input
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="FirstNameId" placeholder="" required>
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
 </div>
                         </div>
-                        <div class="grid grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-6">
-                            <a href="Product-page.html" id="test1"
-  class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl transition mb-2 bg-secondary">
-  <div class="block relative h-48 rounded overflow-hidden bg-white">
-    <div class="product-card--favorites" data-product-id="test1">
-      <i class="product-card--icon-heart heart-icon"></i>
-      <i class="product-card--icon-heart heart-filled-icon"></i>
-    </div>
-    <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
-  </div>
-  <div class="py-6 px-4 border-t border-t-border-color-1">
-    <h3 class="text-dark-green text-h6 title-font mb-1 md:text-h8">Product name</h3>
-    <div class="flex justify-between items-center">
-      <p class="mt-1 line-through">$ 80.30 USD</p>
-      <p class="text-primary font-semibold">$ 50.00 USD</p>
-    </div>
-  </div>
-</a>
-                            <a href="Product-page.html" id="test2"
-  class="product-card border border-border-color-2 block rounded-lg overflow-hidden hover:border-primary hover:shadow-3xl transition mb-2 bg-secondary">
-  <div class="block relative h-48 rounded overflow-hidden bg-white">
-    <div class="product-card--favorites" data-product-id="test2">
-      <i class="product-card--icon-heart heart-icon"></i>
-      <i class="product-card--icon-heart heart-filled-icon"></i>
-    </div>
-    <img alt="title img" class="object-cover object-center w-full h-full block" src="https://dummyimage.com/420x260">
-  </div>
-  <div class="py-6 px-4 border-t border-t-border-color-1">
-    <h3 class="text-dark-green text-h6 title-font mb-1 md:text-h8">Product name</h3>
-    <div class="flex justify-between items-center">
-      <p class="mt-1 line-through">$ 80.30 USD</p>
-      <p class="text-primary font-semibold">$ 50.00 USD</p>
-    </div>
-  </div>
-</a>
+                        <div class="col-span-6 md:col-span-12">
+                            <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 " for="LastNameId">Last name</label>
+    <input
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="LastNameId" placeholder="" required>
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
+</div>
                         </div>
-                        <div class="flex justify-between mt-8">
-                            <button type='button' aria-label='Button pagination prev'
-                                class="button w-14 h-14 rounded-xl border transition group border-primary bg-white inline-flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16"
-                                    fill="none">
-                                    <path
-                                        d="M1.0851 8.72248C1.00196 8.62769 0.935991 8.51508 0.890982 8.39111C0.845974 8.26713 0.822807 8.13422 0.822807 8C0.822807 7.86578 0.845974 7.73287 0.890982 7.6089C0.935991 7.48492 1.00196 7.37231 1.0851 7.27752L6.76685 0.783391C6.9345 0.591778 7.16187 0.484131 7.39896 0.484131C7.63604 0.484131 7.86341 0.591778 8.03106 0.783391C8.1987 0.975004 8.29288 1.23489 8.29288 1.50587C8.29288 1.77685 8.1987 2.03673 8.03106 2.22835L2.97962 8L8.03106 13.7717C8.1987 13.9633 8.29288 14.2232 8.29288 14.4941C8.29288 14.7651 8.1987 15.025 8.03106 15.2166C7.86341 15.4082 7.63604 15.5159 7.39896 15.5159C7.16187 15.5159 6.9345 15.4082 6.76685 15.2166L1.0851 8.72248ZM25.1772 9.02045H1.7172V6.97955H25.1772V9.02045Z"
-                                        fill="#007F84" />
+                        <div class="col-span-6 md:col-span-12">
+                            <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 " for="MailId">Email</label>
+    <input
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="MailId" placeholder="example@youremail.com" required>
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
+</div>
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 " for="PhoneId">Phone</label>
+    <input
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="PhoneId" placeholder="+123 456 789" required>
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
+</div>
+                        </div>
+                        <div class="col-span-6 md:col-span-12"></div>
+                        <div class="col-span-6 md:col-span-12">
+                            <div class="relative inline-block w-64 flex-1 w-full">
+    <label class="text-base block text-dark-green mb-2 leading-[130%] " for="custom-select">State</label>
+    <!-- Сам элемент select без дефолтной стрелки -->
+    <select id="custom-select" placeholder="123"
+        class="small-select no-arrow rounded leading-[150%] text-black-1 border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3">
+        <option value="" disabled selected hidden>Choose your state</option>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+    </select>
+    <!-- Иконка-галочка -->
+    <!-- <svg id="select-arrow" class="select-arrow absolute top-1/2 right-3 -translate-y-1/2 fill-current text-gray-600 w-4 h-4 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <path d="M7 10l5 5 5-5H7z"/>
+    </svg> -->
+</div>
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 " for="passwordId">Password</label>
+    <input
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="password" id="passwordId" placeholder="*********" required>
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
+</div>
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 " for="passwordId2">Confirm Password</label>
+    <input
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="password" id="passwordId2" placeholder="*********" required>
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
+</div>
+                        </div>
+                        <div class="col-span-12">
+                            <div class="flex flex-col">
+    <label class="custom-checkbox">
+        <span class="custom-checkbox__block">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path
+                    d="M18 1.25H6V2.75H18V1.25ZM1.25 6V18H2.75V6H1.25ZM6 22.75H18V21.25H6V22.75ZM22.75 18V6H21.25V18H22.75ZM18 22.75C20.6234 22.75 22.75 20.6234 22.75 18H21.25C21.25 19.7949 19.7949 21.25 18 21.25V22.75ZM1.25 18C1.25 20.6234 3.37665 22.75 6 22.75V21.25C4.20507 21.25 2.75 19.7949 2.75 18H1.25ZM6 1.25C3.37665 1.25 1.25 3.37665 1.25 6H2.75C2.75 4.20507 4.20507 2.75 6 2.75V1.25ZM18 2.75C19.7949 2.75 21.25 4.20507 21.25 6H22.75C22.75 3.37665 20.6234 1.25 18 1.25V2.75Z"
+                    fill="#007F84" />
+            </svg>
+        </span>
+        <input type="checkbox">
+        <span class="checkmark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none">
+                <path
+                    d="M8.50172 11.9425C8.19384 11.6654 7.71962 11.6904 7.44253 11.9983C7.16544 12.3062 7.19039 12.7804 7.49828 13.0575L8.50172 11.9425ZM16.592 9.96046C16.8463 9.63349 16.7874 9.16229 16.4605 8.90799C16.1335 8.65368 15.6623 8.71258 15.408 9.03954L16.592 9.96046ZM18 1.75H6V3.25H18V1.75ZM1.25 6.5V18.5H2.75V6.5H1.25ZM6 23.25H18V21.75H6V23.25ZM22.75 18.5V6.5H21.25V18.5H22.75ZM18 23.25C20.6234 23.25 22.75 21.1234 22.75 18.5H21.25C21.25 20.2949 19.7949 21.75 18 21.75V23.25ZM1.25 18.5C1.25 21.1234 3.37665 23.25 6 23.25V21.75C4.20507 21.75 2.75 20.2949 2.75 18.5H1.25ZM6 1.75C3.37665 1.75 1.25 3.87665 1.25 6.5H2.75C2.75 4.70507 4.20507 3.25 6 3.25V1.75ZM18 3.25C19.7949 3.25 21.25 4.70507 21.25 6.5H22.75C22.75 3.87665 20.6234 1.75 18 1.75V3.25ZM7.49828 13.0575L10.033 15.3387L11.0364 14.2237L8.50172 11.9425L7.49828 13.0575ZM12.585 15.1123L16.592 9.96046L15.408 9.03954L11.401 14.1914L12.585 15.1123ZM10.033 15.3387C10.7881 16.0183 11.9613 15.9142 12.585 15.1123L11.401 14.1914C11.3119 14.306 11.1443 14.3208 11.0364 14.2237L10.033 15.3387Z"
+                    fill="#007F84" />
+            </svg>
+        </span>
+        <span class="ml-3 text-black-1 text-h10 ">I have read and agree to the <a class="underline" href="#">Terms</a></span>
+    </label>
+    <small class="text-h11 text-danger mt-3 ">Please confirm that you agree</small>
+</div>
+                        </div>
+                        <div class="col-span-12">
+                            <button class="button test2 px-6 py-3 w-full rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary group"
+                                    type="submit" aria-label="Login">
+                                <span class="font-medium">Register</span>
+                                <svg class="ml-4" xmlns="http://www.w3.org/2000/svg" width="23" height="11" viewBox="0 0 23 11" fill="none">
+                                    <path class="group-hover:fill-primary transition-all" d="M21.9543 5.9676C22.006 5.90858 22.0471 5.83847 22.0751 5.76128C22.1031 5.6841 22.1176 5.60135 22.1176 5.51778C22.1176 5.43421 22.1031 5.35146 22.0751 5.27428C22.0471 5.19709 22.006 5.12698 21.9543 5.06796L18.4168 1.0247C18.3124 0.9054 18.1708 0.838379 18.0232 0.838379C17.8756 0.838379 17.7341 0.9054 17.6297 1.0247C17.5253 1.144 17.4667 1.3058 17.4667 1.47452C17.4667 1.64323 17.5253 1.80503 17.6297 1.92433L20.7747 5.51778L17.6297 9.11123C17.5253 9.23053 17.4667 9.39233 17.4667 9.56105C17.4667 9.72976 17.5253 9.89156 17.6297 10.0109C17.7341 10.1302 17.8756 10.1972 18.0232 10.1972C18.1708 10.1972 18.3124 10.1302 18.4168 10.0109L21.9543 5.9676ZM0.882812 6.15311H21.5607V4.88245H0.882812V6.15311Z" fill="white"/>
                                 </svg>
                             </button>
-
-                            <div class='flex items-center gap-3'>
-                                <div class='pagination-num active'>
-                                    1</div>
-                                <div class='pagination-num'>
-                                    2</div>
-                                <div class='pagination-num'>
-                                    3</div>
-                                <div class='pagination-num'>
-                                    ...</div>
-                                <div class='pagination-num'>
-                                    10</div>
-                            </div>
-
-                            <button type='button' aria-label='Button pagination next'
-                                class="button w-14 h-14 rounded-xl border transition group border-primary bg-primary hover:bg-primary inline-flex items-center justify-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="16" viewBox="0 0 26 16"
-                                    fill="none">
-                                    <path
-                                        d="M24.9149 8.72248C24.998 8.62769 25.064 8.51508 25.109 8.39111C25.154 8.26713 25.1772 8.13422 25.1772 8C25.1772 7.86578 25.154 7.73287 25.109 7.6089C25.064 7.48492 24.998 7.37231 24.9149 7.27752L19.2331 0.783391C19.0655 0.591778 18.8381 0.484131 18.601 0.484131C18.364 0.484131 18.1366 0.591778 17.9689 0.783391C17.8013 0.975004 17.7071 1.23489 17.7071 1.50587C17.7071 1.77685 17.8013 2.03673 17.9689 2.22835L23.0204 8L17.9689 13.7717C17.8013 13.9633 17.7071 14.2232 17.7071 14.4941C17.7071 14.7651 17.8013 15.025 17.9689 15.2166C18.1366 15.4082 18.364 15.5159 18.601 15.5159C18.8381 15.5159 19.0655 15.4082 19.2331 15.2166L24.9149 8.72248ZM0.822754 9.02045H24.2828V6.97955H0.822754V9.02045Z"
-                                        fill="white" />
-                                </svg>
-                            </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
-        </section>
+            <div class="col-span-3 lg:hidden"></div>
+        </div>
+    </section>
 
-        <footer class="mt-auto bg-secondary pt-16 pb-10 overflow-hidden md:py-8">
+    <footer class="mt-auto bg-secondary pt-16 pb-10 overflow-hidden md:py-8">
     <div class="container">
         <div class="grid grid-cols-12 gap-5 lg:gap-y-10">
             <div class="col-span-12 minlg:col-span-6 minxl:col-span-5">
@@ -617,9 +577,9 @@
         <p class="text-black-1 text-h10">&copy; 2023 All rights reserved.</p>
     </div>
 </footer>
-    </main>
+</main>
 
-    <div id="modal" class="fixed inset-0 z-[10000] bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
+<div id="modal" class="fixed inset-0 z-[10000] bg-gray-800 bg-opacity-50 flex items-center justify-center hidden">
     <div class="bg-white rounded-lg shadow-lg p-8 w-full max-w-[672px] max-h-screen md:overflow-y-scroll relative">
         <div class="flex justify-between items-center mb-5">
             <h3 class="text-h3 not-italic leading-[120%] font-semibold md:text-h5 text-h5">Make a <span
@@ -721,7 +681,7 @@
         </div>
     </div>
 </div>
-    <div id="wishlist"
+<div id="wishlist"
     class="wishlist w-full minsm:w-[400px] z-[99] overflow-y-scroll bg-white fixed top-0 -right-full minsm:-right-[400px] bottom-0 py-6 px-8">
     <div class="flex justify-between">
         <span>Your Wishlist</span>
@@ -799,7 +759,7 @@
     </div>
 </div>
 <div id="wishlist-bg" class="fixed w-screen h-screen top-0 left-0 z-[98] bg-bg-color-1 hidden"></div>
-    <script type="text/html" src="./js/libs/splide.min.js"></script>
+<script type="text/html" src="./js/libs/splide.min.js"></script>
 <script type="module" src="./js/scripts.js"></script>
 </body>
 
