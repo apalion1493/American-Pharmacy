@@ -70,12 +70,14 @@ module.exports = {
 			},
 			boxShadow: {
 				'3xl': '0 35px 60px -15px rgba(193, 148, 118, 0.15)',
+				'4xl': '0px 1px 10px 0px rgba(72, 76, 73, 0.10);',
 			},
 			colors: {
 				transparent: 'transparent',
 				primary: '#007F84',
 				secondary: '#EAFFFB',
 				white: '#ffffff',
+				white2: '#F5F8F6',
 				'black-1': '#333333',
 				'dark-green': '#1E3B41',
 				purple: '#3f3cbb',
