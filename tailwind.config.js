@@ -70,7 +70,8 @@ module.exports = {
 			},
 			boxShadow: {
 				'3xl': '0 35px 60px -15px rgba(193, 148, 118, 0.15)',
-				'4xl': '0px 1px 10px 0px rgba(72, 76, 73, 0.10);',
+				'4xl': '0px 1px 10px 0px rgba(72, 76, 73, 0.10)',
+				'5xl': '0px 8px 20px -6px rgba(72, 76, 73, 0.10), 1px 0px 6px -1px rgba(72, 76, 73, 0.15)',
 			},
 			colors: {
 				transparent: 'transparent',
