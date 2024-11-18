@@ -7,3 +7,16 @@ textarea::placeholder {
 .checked\:bg-primary:checked {
   background-color: #007F84 !important;
 }
+
+.red-star {
+  position: relative;
+}
+
+.red-star:before {
+  content: "*";
+  color: #F8285A;
+  position: absolute;
+  top: 0;
+  right: -8px;
+  font-size: 14px;
+}

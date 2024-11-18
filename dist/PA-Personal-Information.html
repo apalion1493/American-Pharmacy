@@ -9,7 +9,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Login Details</title>
+  <title>Personal Information</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -111,7 +111,7 @@
             <div class="flex flex-col w-full px-8 py-14">
                 <section class="flex items-end w-full mb-8">
                     <div class="flex flex-col">
-                        <h1 class="mb-4 text-h5 font-semibold text-dark-green">Your Orders</h1>
+                        <h1 class="mb-4 text-h5 font-semibold text-dark-green">Personal Information</h1>
                         <nav class="flex" aria-label="Breadcrumb">
                             <ol class="inline-flex items-center flex-wrap space-x-2 md:space-x-2 rtl:space-x-reverse">
                                 <li class="inline-flex items-center">
@@ -127,68 +127,107 @@
                                             <path d="M6 3.5L11 8.5L6 13.5" stroke="#1E3B41" stroke-width="1.5"
                                                   stroke-linecap="round"/>
                                         </svg>
-                                        <span class="ms-2 text-h10 font-medium text-dark-green md:ms-2 dark:text-gray-400">Address Information</span>
+                                        <span class="ms-2 text-h10 font-medium text-dark-green md:ms-2 dark:text-gray-400">Personal Information</span>
                                     </div>
                                 </li>
                             </ol>
                         </nav>
                     </div>
-                    <button type="button" class="button px-2 py-2 rounded border transition group border-primary bg-primary inline-flex items-center hover:bg-transparent text-white hover:text-primary justify-center ml-auto self-end">
-    <span class="bg-white2 w-[28px] h-[28px] rounded flex items-center justify-center mr-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
-          <path d="M15.5156 7H9.51562V1C9.51562 0.4 9.11563 0 8.51562 0C7.91563 0 7.51562 0.4 7.51562 1V7H1.51562C0.915625 7 0.515625 7.4 0.515625 8C0.515625 8.6 0.915625 9 1.51562 9H7.51562V15C7.51562 15.6 7.91563 16 8.51562 16C9.11563 16 9.51562 15.6 9.51562 15V9H15.5156C16.1156 9 16.5156 8.6 16.5156 8C16.5156 7.4 16.1156 7 15.5156 7Z" fill="#007F84"/>
-        </svg>
-    </span>
-    <span class="font-medium">Add New Address</span>
-</button>
                 </section>
 
-                <section class="bg-white rounded-lg shadow-5xl px-6 pt-6 pb-2 flex flex-col">
-                    <div class="flex flex-col">
-                        <span class="text-md mb-5 block font-medium">My Orders</span>
-                        <p class="text-base text-black-1">In this section, you can view orders you have placed.</p>
+                <section class="bg-white rounded-lg shadow-5xl px-6 pt-6 pb-8 flex flex-col mb-6">
+                    <span class="text-md mb-5 block font-medium">Registration Details</span>
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-6 md:col-span-12">
+                            <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 red-star" for="FirstNameId">First Name</label>
+    <input
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="FirstNameId" placeholder="John" required>
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
+</div>
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 red-star" for="LastNameId">Last name</label>
+    <input
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="LastNameId" placeholder="Smith" required>
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
+</div>
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 " for="MailId">Email</label>
+    <input
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="MailId" placeholder="example@youremail.com" required>
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
+</div>
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 " for="PhoneId">Phone</label>
+    <input
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="PhoneId" placeholder="+123 456 789" required>
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
+</div>
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            <span class="text-base text-dark-green leading-[130%] mb-2 block">Gender</span>
+                            <div class="flex items-center gap-x-3">
+                                <label for="genderMale" class="flex w-full flex-1 h-[47px] cursor-pointer items-center justify-start gap-2 rounded border border-border-color-3 bg-white px-4 py-2 has-[:disabled]:opacity-75">
+                                    <input id="genderMale" type="radio" class="before:content[''] relative h-4 w-4 appearance-none rounded-full border border-primary bg-white before:invisible before:absolute before:left-1/2 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-slate-100 checked:border-primary checked:bg-primary checked:before:visible focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-primary checked:focus:outline-primary disabled:cursor-not-allowed" name="radioDefault" value="genderMale" checked >
+                                    <span class="text-h10">Male</span>
+                                </label>
+                                <label for="genderFemale" class="flex w-full flex-1 h-[47px] cursor-pointer items-center justify-start gap-2 rounded border border-border-color-3 bg-white px-4 py-2 has-[:disabled]:opacity-75">
+                                    <input id="genderFemale" type="radio" class="before:content[''] relative h-4 w-4 appearance-none rounded-full border border-primary bg-white before:invisible before:absolute before:left-1/2 before:top-1/2 before:h-1.5 before:w-1.5 before:-translate-x-1/2 before:-translate-y-1/2 before:rounded-full before:bg-slate-100 checked:border-primary checked:bg-primary checked:before:visible focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-primary checked:focus:outline-primary disabled:cursor-not-allowed" name="radioDefault" value="genderFemale">
+                                    <span class="text-h10">Female</span>
+                                </label>
+                            </div>
+
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            <div class="relative inline-block w-64 flex-1 w-full">
+    <label class="text-base block text-dark-green mb-2 leading-[130%] " for="custom-select">State</label>
+    <!-- Сам элемент select без дефолтной стрелки -->
+    <select id="custom-select" placeholder="123"
+        class="small-select no-arrow rounded leading-[150%] text-black-1 border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3">
+        <option value="" disabled selected hidden>Choose your state</option>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+    </select>
+    <!-- Иконка-галочка -->
+    <!-- <svg id="select-arrow" class="select-arrow absolute top-1/2 right-3 -translate-y-1/2 fill-current text-gray-600 w-4 h-4 transition-transform duration-300 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+        <path d="M7 10l5 5 5-5H7z"/>
+    </svg> -->
+</div>
+                        </div>
                     </div>
-                    <div class="overflow-hidden w-full overflow-x-auto mt-6">
-                        <table class="w-full text-left">
-                            <thead class="border-y py-2 uppercase text-base font-semibold text-DarkBlue50">
-                            <tr>
-                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 w-[20%] font-medium">PRODUCT NAME</th>
-                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 w-[20%] font-medium">STATUS</th>
-                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 w-[20%] font-medium">PRICE</th>
-                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 w-[800px] font-medium">ADRESS</th>
-                            </tr>
-                            </thead>
-                            <tbody class="border-[0]">
-                            <tr>
-                                <td class="p-4 pt-8">
-                                    <span class="font-medium text-dark-green">Differin 0.1% Tabs</span>
-                                </td>
-                                <td class="p-4 pt-8">
-                                    <span class="w-fit px-3 py-2 min-h-10 flex justify-center items-center text-h10 font-medium leading-6 rounded overflow-hidden bg-primary text-white">Delivered</span>
-                                </td>
-                                <td class="p-4 pt-8">
-                                    <span class="font-medium text-dark-green tracking-[-0.16px]">£16.43</span>
-                                </td>
-                                <td class="p-4 pt-8">
-                                    <span class="font-medium text-dark-green">Moldova, Chisinau, Botanica, Valea-Morilor 6/84, MD-2015</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="p-4 pt-8">
-                                    <span class="font-medium text-dark-green">Teoxane R(II) Eyes 15ml</span>
-                                </td>
-                                <td class="p-4 pt-8">
-                                    <span class="w-fit px-3 py-2 min-h-10 flex justify-center items-center text-h10 font-medium leading-6 rounded overflow-hidden bg-bermuda text-white">Shipping</span>
-                                </td>
-                                <td class="p-4 pt-8">
-                                    <span class="font-medium text-dark-green tracking-[-0.16px]">£38.50</span>
-                                </td>
-                                <td class="p-4 pt-8">
-                                    <span class="font-medium text-dark-green">Moldova, Chisinau, Botanica, Valea-Morilor 6/84, MD-2015</span>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
+                </section>
+                <section class="bg-white rounded-lg shadow-5xl px-6 pt-6 pb-8 flex flex-col">
+                    <span class="text-md mb-5 block font-medium">Change Password</span>
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-6 md:col-span-12">
+                            <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 red-star" for="passwordId">Old Password</label>
+    <input
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="password" id="passwordId" placeholder="*********" required>
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
+</div>
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            <div class="form-group flex flex-col items-start flex-1">
+    <label class="text-base text-dark-green leading-[130%] mb-2 red-star" for="passwordId2">New Password</label>
+    <input
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="password" id="passwordId2" placeholder="*********" required>
+    <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
+</div>
+                        </div>
                     </div>
                 </section>
             </div>
