@@ -7,12 +7,12 @@
 <body class="">
 <main class="flex flex-col justify-between min-h-screen">
 
-    <div class="container-full flex min-h-screen bg-white2">
+    <div x-data="{isMob: false}" class="container-full flex min-h-screen bg-white2">
         @@include('components/Navigation.html')
         <div class="container-full w-full flex flex-col">
             @@include('components/PA-Header.html')
-            <div class="flex flex-col w-full px-8 py-14">
-                <section class="flex items-end w-full mb-8">
+            <div class="flex flex-col w-full px-8 py-14 md:px-4">
+                <section class="flex items-end w-full mb-8 md:flex-col md:items-start">
                     <div class="flex flex-col">
                         <h1 class="mb-4 text-h5 font-semibold text-dark-green">Personal Information</h1>
                         <nav class="flex" aria-label="Breadcrumb">
@@ -37,10 +37,9 @@
                         </nav>
                     </div>
                 </section>
-
-                <section class="bg-white rounded-lg shadow-5xl px-6 pt-6 pb-8 flex flex-col mb-6">
+                <section class="bg-white rounded-lg shadow-5xl px-6 md:px-4 pt-6 pb-8 flex flex-col mb-6">
                     <span class="text-md mb-5 block font-medium">Registration Details</span>
-                    <div class="grid grid-cols-12 gap-6">
+                    <div class="grid grid-cols-12 gap-6 md:gap-x-0">
                         <div class="col-span-6 md:col-span-12">
                             @@include('components/input.html', {
                             'type': 'text',
@@ -113,9 +112,9 @@
                         </div>
                     </div>
                 </section>
-                <section class="bg-white rounded-lg shadow-5xl px-6 pt-6 pb-8 flex flex-col">
+                <section class="bg-white rounded-lg shadow-5xl px-6 md:px-4 pt-6 pb-8 flex flex-col">
                     <span class="text-md mb-5 block font-medium">Change Password</span>
-                    <div class="grid grid-cols-12 gap-6">
+                    <div class="grid grid-cols-12 gap-6 md:gap-x-0">
                         <div class="col-span-6 md:col-span-12">
                             @@include('components/input.html', {
                             'type': 'password',

@@ -1,0 +1,68 @@
+<div :class="isMob ? 'lg:left-0 lg:z-[999]' : 'lg:-left-[359px] lg:-z-20'" class="max-w-[285px] min-h-screen w-full bg-dark-green py-10 px-6 flex flex-col lg:fixed lg:top-0 lg:transition-all lg:w-full lg:h-screen">
+    <div class="flex flex-col h-full">
+        <a href="#">
+            <img src="img/new-icon/Logo-Meds-Warehouse.svg" alt="Logo">
+        </a>
+
+        <div class="my-16">
+            <nav class="flex flex-col gap-y-4">
+                <a class="flex items-center px-3 py-2 rounded-lg gap-x-3 transition-all bg-gray-4 hover:bg-gray-4" href="PA-orders-info.html">
+                    <!-- class for active item "bg-gray-4"-->
+                    <span class="w-8 min-w-8 h-8 flex items-center justify-center rounded overflow-hidden bg-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M6.58325 19.8696C7.27361 19.8696 7.83325 19.31 7.83325 18.6196C7.83325 17.9293 7.27361 17.3696 6.58325 17.3696C5.8929 17.3696 5.33325 17.9293 5.33325 18.6196C5.33325 19.31 5.8929 19.8696 6.58325 19.8696Z"
+                            fill="white"/>
+                      <path d="M15.3333 19.8696C16.0236 19.8696 16.5833 19.31 16.5833 18.6196C16.5833 17.9293 16.0236 17.3696 15.3333 17.3696C14.6429 17.3696 14.0833 17.9293 14.0833 18.6196C14.0833 19.31 14.6429 19.8696 15.3333 19.8696Z"
+                            fill="white"/>
+                      <path d="M18.6509 4.70304H3.87672L3.33051 1.90309C3.29937 1.75024 3.21566 1.61316 3.09395 1.51571C2.97224 1.41827 2.82024 1.36662 2.66441 1.36976H0V2.70307H2.11821L4.66272 15.5028C4.69386 15.6557 4.77757 15.7928 4.89928 15.8902C5.02099 15.9877 5.17299 16.0393 5.32882 16.0362H17.3187V14.7029H5.87502L5.32882 12.0362H17.3187C17.4726 12.04 17.6232 11.9902 17.7446 11.8954C17.8661 11.8006 17.9509 11.6666 17.9848 11.5162L19.317 5.51636C19.3393 5.41744 19.3388 5.31473 19.3155 5.21605C19.2921 5.11736 19.2466 5.02531 19.1824 4.94688C19.1182 4.86845 19.0369 4.80572 18.9448 4.76347C18.8527 4.72121 18.7522 4.70054 18.6509 4.70304Z"
+                            fill="white"/>
+                    </svg>
+                </span>
+                    <span class="text-white text-h10">Orders</span>
+                </a>
+                <a class="flex items-center px-3 py-2 rounded-lg gap-x-3 transition-all hover:bg-gray-4" href="PA-Personal-Information.html">
+                    <!-- class for active item "bg-gray-4"-->
+                    <span class="w-8 min-w-8 h-8 flex items-center justify-center rounded overflow-hidden bg-primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21" fill="none">
+                      <path d="M6.45833 6.2924C6.45833 4.33639 8.04399 2.75073 10 2.75073C11.956 2.75073 13.5417 4.33639 13.5417 6.2924C13.5417 8.24841 11.956 9.83407 10 9.83407C8.04399 9.83407 6.45833 8.24841 6.45833 6.2924ZM9.05584 11.9174H10.9442C11.8543 11.9174 12.5755 11.9174 13.1569 11.9649C13.7514 12.0135 14.2544 12.1148 14.7137 12.3488C15.4585 12.7283 16.0641 13.3339 16.4436 14.0787C16.6776 14.538 16.7789 15.041 16.8275 15.6355C16.875 16.2169 16.875 16.9381 16.875 17.8482V18.3757C16.875 18.7209 16.5952 19.0007 16.25 19.0007H3.75C3.40482 19.0007 3.125 18.7209 3.125 18.3757V17.8482C3.125 16.9381 3.12499 16.2169 3.17249 15.6355C3.22106 15.041 3.3224 14.538 3.55643 14.0787C3.93593 13.3339 4.54147 12.7283 5.28629 12.3488C5.7456 12.1148 6.24863 12.0135 6.84312 11.9649C7.42447 11.9174 8.14572 11.9174 9.05584 11.9174Z"
+                            fill="#EAFFFB"/>
+                    </svg>
+                </span>
+                    <span class="text-white text-h10">Personal Info</span>
+                </a>
+                <a class="flex items-center px-3 py-2 rounded-lg gap-x-3 transition-all hover:bg-gray-4" href="PA-Address-Information.html">
+                    <!-- class for active item "bg-gray-4"-->
+                    <span class="w-8 min-w-8 h-8 flex items-center justify-center rounded overflow-hidden bg-primary">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.65133 0.998038C7.85518 0.834964 8.14482 0.834964 8.34867 0.998038L15.7905 6.95153C15.9229 7.05745 16 7.21781 16 7.38736V16.3176C16 16.6258 15.7501 16.8757 15.4419 16.8757H10.9767C10.6685 16.8757 10.4186 16.6258 10.4186 16.3176V10.1781H5.5814V16.3176C5.5814 16.6258 5.33151 16.8757 5.02326 16.8757H0.55814C0.249888 16.8757 0 16.6258 0 16.3176V7.38736C0 7.21781 0.0770733 7.05745 0.209473 6.95153L7.65133 0.998038Z"
+                            fill="#EAFFFB"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M8 12.0385C8.30825 12.0385 8.55814 12.2884 8.55814 12.5967V16.3176C8.55814 16.6258 8.30825 16.8757 8 16.8757C7.69175 16.8757 7.44186 16.6258 7.44186 16.3176V12.5967C7.44186 12.2884 7.69175 12.0385 8 12.0385Z"
+                            fill="#EAFFFB"/>
+                    </svg>
+                </span>
+                    <span class="text-white text-h10">Address Info</span>
+                </a>
+            </nav>
+        </div>
+
+        <a class="flex items-center px-3 py-2 mt-auto rounded-lg gap-x-3 transition-all hover:bg-gray-4" href="#">
+            <!-- class for active item "bg-gray-4"-->
+            <span class="w-8 min-w-8 h-8 flex items-center justify-center rounded overflow-hidden bg-primary">
+           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M18.125 2.5C18.125 2.15482 17.8452 1.875 17.5 1.875H10.0035C9.65828 1.875 9.37846 2.15482 9.37846 2.5C9.37846 2.84518 9.65828 3.125 10.0035 3.125H16.875V16.875H10C9.65482 16.875 9.375 17.1548 9.375 17.5C9.375 17.8452 9.65482 18.125 10 18.125H17.5C17.8452 18.125 18.125 17.8452 18.125 17.5V2.5Z"
+                    fill="#EAFFFB"/>
+              <path d="M6.69194 5.80806C6.44786 5.56398 6.05214 5.56398 5.80806 5.80806L2.05806 9.55806C1.81398 9.80214 1.81398 10.1979 2.05806 10.4419L5.80806 14.1919C6.05214 14.436 6.44786 14.436 6.69194 14.1919C6.93602 13.9479 6.93602 13.5521 6.69194 13.3081L3.38388 10L6.69194 6.69194C6.93602 6.44786 6.93602 6.05214 6.69194 5.80806Z"
+                    fill="#EAFFFB"/>
+              <path d="M13.9583 9.99654C13.9583 9.65136 13.6785 9.37154 13.3333 9.37154H2.5C2.15482 9.37154 1.875 9.65136 1.875 9.99654C1.875 10.3417 2.15482 10.6215 2.5 10.6215H13.3333C13.6785 10.6215 13.9583 10.3417 13.9583 9.99654Z"
+                    fill="#EAFFFB"/>
+            </svg>
+        </span>
+            <span class="text-white text-h10">Log Out</span>
+        </a>
+    </div>
+
+    <div :class="isMob ? 'opacity-100 delay-100' : 'opacity-0'" @click="isMob = !isMob"
+         class="flex items-center minlg:hidden justify-center transition-all bg-black bg-opacity-50 flex-1"></div>
+</div>

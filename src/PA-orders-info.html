@@ -5,14 +5,14 @@
 })
 
 <body class="">
-<main class="flex flex-col justify-between min-h-screen">
+<main class="flex flex-col justify-between min-h-screen relative">
 
-    <div class="container-full flex min-h-screen bg-white2">
+    <div x-data="{isMob: false}" class="container-full flex min-h-screen bg-white2">
         @@include('components/Navigation.html')
         <div class="container-full w-full flex flex-col">
             @@include('components/PA-Header.html')
-            <div class="flex flex-col w-full px-8 py-14">
-                <section class="flex items-end w-full mb-8">
+            <div class="flex flex-col w-full px-8 py-14 md:px-4">
+                <section class="flex items-end w-full mb-8 md:flex-col md:items-start">
                     <div class="flex flex-col">
                         <h1 class="mb-4 text-h5 font-semibold text-dark-green">Your Orders</h1>
                         <nav class="flex" aria-label="Breadcrumb">
@@ -38,23 +38,22 @@
                     </div>
                     @@include('components/button-left-icon.html', {
                     'title': 'Add New Address',
-                    'style': 'justify-center ml-auto self-end',
+                    'style': 'justify-center ml-auto self-end md:mt-4 md:self-start md:ml-0',
                     })
                 </section>
-
-                <section class="bg-white rounded-lg shadow-5xl px-6 pt-6 pb-2 flex flex-col">
+                <section class="bg-white rounded-lg shadow-5xl px-6 md:px-4 pt-6 pb-2 flex flex-col">
                     <div class="flex flex-col">
                         <span class="text-md mb-5 block font-medium">My Orders</span>
                         <p class="text-base text-black-1">In this section, you can view orders you have placed.</p>
                     </div>
                     <div class="overflow-hidden w-full overflow-x-auto mt-6">
                         <table class="w-full text-left">
-                            <thead class="border-y py-2 uppercase text-base font-semibold text-DarkBlue50">
+                            <thead class="border-b py-2 uppercase text-base font-semibold text-DarkBlue50">
                             <tr>
-                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 w-[20%] font-medium">PRODUCT NAME</th>
+                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 w-[20%] min-w-[150px] font-medium">PRODUCT NAME</th>
                                 <th scope="col" class="px-4 py-5 text-h11 text-black-2 w-[20%] font-medium">STATUS</th>
                                 <th scope="col" class="px-4 py-5 text-h11 text-black-2 w-[20%] font-medium">PRICE</th>
-                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 w-[800px] font-medium">ADRESS</th>
+                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 w-[800px] min-w-[300px] font-medium">ADRESS</th>
                             </tr>
                             </thead>
                             <tbody class="border-[0]">

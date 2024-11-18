@@ -64,19 +64,19 @@ document.addEventListener('DOMContentLoaded', function () {
 	const wishlistCloseBtn = document.querySelector('#wishlist-close')
 	const wishlistBg = document.querySelector('#wishlist-bg')
 
-	wishlistButtonOpen.addEventListener('click', () => {
+	wishlistButtonOpen?.addEventListener('click', () => {
 		wishlistBlock.classList.add('active')
 		wishlistBg.classList.remove('hidden')
 		document.body.classList.add('overflow-hidden')
 	})
 
-	wishlistCloseBtn.addEventListener('click', () => {
+	wishlistCloseBtn?.addEventListener('click', () => {
 		wishlistBlock.classList.remove('active')
 		wishlistBg.classList.add('hidden')
 		document.body.classList.remove('overflow-hidden')
 	})
 
-	wishlistBg.addEventListener('click', () => {
+	wishlistBg?.addEventListener('click', () => {
 		wishlistBlock.classList.remove('active')
 		wishlistBg.classList.add('hidden')
 		document.body.classList.remove('overflow-hidden')
@@ -136,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const burgerButton = document.getElementById('burger-button')
 	const mobileMenu = document.getElementById('mobile-menu')
 
-	burgerButton.addEventListener('click', () => {
+	burgerButton?.addEventListener('click', () => {
 		mobileMenu.classList.toggle('active')
 		document.body.classList.toggle('overflow-hidden')
 	})
@@ -334,14 +334,14 @@ document.addEventListener('DOMContentLoaded', () => {
 	const buttonSearch = document.querySelector('#search-button')
 	const searchContainer = document.querySelector('.searchContainer')
 
-	buttonSearch.addEventListener('click', (e) => {
+	buttonSearch?.addEventListener('click', (e) => {
 		e.stopPropagation(); // Остановить всплытие события, чтобы не сработал обработчик на document
 		searchContainer.classList.toggle('active');
 	});
 
-	document.addEventListener('click', (e) => {
-		if (!searchContainer.contains(e.target)) { // Если клик не внутри searchContainer
-			searchContainer.classList.remove('active'); // Убрать класс active
-		}
-	});
+	// document.addEventListener('click', (e) => {
+	// 	if (!searchContainer.contains(e.target)) { // Если клик не внутри searchContainer
+	// 		searchContainer.classList.remove('active'); // Убрать класс active
+	// 	}
+	// });
 })

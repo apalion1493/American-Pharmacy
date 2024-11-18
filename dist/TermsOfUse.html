@@ -740,6 +740,12 @@
 <div id="wishlist-bg" class="fixed w-screen h-screen top-0 left-0 z-[98] bg-bg-color-1 hidden"></div>
     <script type="text/html" src="./js/libs/splide.min.js"></script>
 <script type="module" src="./js/scripts.js"></script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('data', () => ({
+        }))
+    })
+</script>
 </body>
 
 </html>

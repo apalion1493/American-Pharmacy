@@ -88,22 +88,20 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
             <div class="flex items-center ml-5 lg:ml-auto">
                 <button id="wishlist-open" class="relative md:mr-2">
-                    <i class="heart-white-icon"></i>
+                    <i class="Cart-icon-white"></i>
                     <span
                         class="rounded-full bg-dark-green text-white absolute -top-1.5 -right-1.5 flex justify-center content-center align-middle w-3.5 h-3.5">
                         <span
                             class="text-sm absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">1</span>
                     </span>
+                </button>
+                <button type="button" class="text-none ml-6">
+                    personal account
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+                        <path d="M10.9375 7.75903C10.9375 5.51538 12.7563 3.69653 15 3.69653C17.2437 3.69653 19.0625 5.51538 19.0625 7.75903C19.0625 10.0027 17.2437 11.8215 15 11.8215C12.7563 11.8215 10.9375 10.0027 10.9375 7.75903ZM15 1.82153C11.7208 1.82153 9.0625 4.47984 9.0625 7.75903C9.0625 11.0382 11.7208 13.6965 15 13.6965C18.2792 13.6965 20.9375 11.0382 20.9375 7.75903C20.9375 4.47984 18.2792 1.82153 15 1.82153ZM15 15.5715C8.26905 15.5715 2.8125 21.0281 2.8125 27.759C2.8125 28.2768 3.23223 28.6965 3.75 28.6965C4.26777 28.6965 4.6875 28.2768 4.6875 27.759C4.6875 22.0636 9.30458 17.4465 15 17.4465C20.6954 17.4465 25.3125 22.0636 25.3125 27.759C25.3125 28.2768 25.7322 28.6965 26.25 28.6965C26.7678 28.6965 27.1875 28.2768 27.1875 27.759C27.1875 21.0281 21.731 15.5715 15 15.5715Z" fill="white"/>
+                    </svg>
                 </button>
                 <div class="ml-6 flex items-center lg:hidden">
                     <svg class="mr-3" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28"
@@ -544,8 +542,8 @@
                             <div class="form-group flex flex-col items-start flex-1 w-[345px] mr-4 sm:mr-0 sm:w-full">
     <label class="text-base text-dark-green leading-[130%] mb-2 absolute -z-10 opacity-0" for="MailId">Email</label>
     <input
-        class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
-        type="text" id="MailId" placeholder="Enter your email">
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="MailId" placeholder="Enter your email" required>
     <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
 </div>
                             <button type="submit"
@@ -662,15 +660,15 @@
                     <div class="form-group flex flex-col items-start flex-1">
     <label class="text-base text-dark-green leading-[130%] mb-2 " for="NameId">Name</label>
     <input
-        class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
-        type="text" id="NameId" placeholder="">
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="NameId" placeholder="" required>
     <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
 </div>
                     <div class="form-group flex flex-col items-start flex-1">
     <label class="text-base text-dark-green leading-[130%] mb-2 " for="PhoneId">Phone</label>
     <input
-        class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
-        type="text" id="PhoneId" placeholder="">
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="PhoneId" placeholder="" required>
     <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
 </div>
                 </div>
@@ -678,8 +676,8 @@
                     <div class="form-group flex flex-col items-start flex-1">
     <label class="text-base text-dark-green leading-[130%] mb-2 " for="MailId">Email</label>
     <input
-        class="rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
-        type="text" id="MailId" placeholder="">
+        class="input rounded text-black-1 leading-[150%] border text-h10 w-full focus:outline-0 focus:shadow-none focus:ring-0 focus:border-border-color-3 border-border-color-3 p-3 "
+        type="text" id="MailId" placeholder="" required>
     <small class="self-end text-h11 text-danger mt-2 hidden">text error</small>
 </div>
 
@@ -821,6 +819,12 @@
 <div id="wishlist-bg" class="fixed w-screen h-screen top-0 left-0 z-[98] bg-bg-color-1 hidden"></div>
     <script type="text/html" src="./js/libs/splide.min.js"></script>
 <script type="module" src="./js/scripts.js"></script>
+<script>
+    document.addEventListener('alpine:init', () => {
+        Alpine.data('data', () => ({
+        }))
+    })
+</script>
 </body>
 
 </html>
