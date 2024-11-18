@@ -7,7 +7,7 @@
 <body class="">
 <main class="flex flex-col justify-between min-h-screen">
 
-    <div class="container-full flex bg-white2">
+    <div class="container-full flex min-h-screen bg-white2">
         @@include('components/Navigation.html')
         <div class="container-full w-full flex flex-col">
             @@include('components/PA-Header.html')
@@ -47,7 +47,55 @@
                         <span class="text-md mb-5 block font-medium">My Orders</span>
                         <p class="text-base text-black-1">In this section, you can view orders you have placed.</p>
                     </div>
-                    <table class="mt-6"></table>
+                    <div class="overflow-hidden w-full overflow-x-auto mt-6">
+                        <table class="w-full text-left">
+                            <thead class="border-y py-2 uppercase text-base font-semibold text-DarkBlue50">
+                            <tr>
+                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 w-[20%] font-medium">PRODUCT NAME</th>
+                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 w-[20%] font-medium">STATUS</th>
+                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 w-[20%] font-medium">PRICE</th>
+                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 w-[800px] font-medium">ADRESS</th>
+                            </tr>
+                            </thead>
+                            <tbody class="border-[0]">
+                            <tr>
+                                <td class="p-4 pt-8">
+                                    <span class="font-medium text-dark-green">Differin 0.1% Tabs</span>
+                                </td>
+                                <td class="p-4 pt-8">
+                                    @@include('components/Status.html', {
+                                    'Style': 'bg-primary text-white',
+                                    'Title': 'Delivered',
+                                    })
+                                </td>
+                                <td class="p-4 pt-8">
+                                    <span class="font-medium text-dark-green tracking-[-0.16px]">£16.43</span>
+                                </td>
+                                <td class="p-4 pt-8">
+                                    <span class="font-medium text-dark-green">Moldova, Chisinau, Botanica, Valea-Morilor 6/84, MD-2015</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 pt-8">
+                                    <span class="font-medium text-dark-green">Teoxane R(II) Eyes 15ml</span>
+                                </td>
+                                <td class="p-4 pt-8">
+                                    @@include('components/Status.html', {
+                                    'Style': 'bg-bermuda text-white',
+                                    'Title': 'Shipping',
+                                    })
+                                </td>
+                                <td class="p-4 pt-8">
+                                    <span class="font-medium text-dark-green tracking-[-0.16px]">£38.50</span>
+                                </td>
+                                <td class="p-4 pt-8">
+                                    <span class="font-medium text-dark-green">Moldova, Chisinau, Botanica, Valea-Morilor 6/84, MD-2015</span>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <table class=""></table>
                 </section>
             </div>
         </div>

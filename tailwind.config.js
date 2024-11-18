@@ -80,6 +80,7 @@ module.exports = {
 				white: '#ffffff',
 				white2: '#F5F8F6',
 				'black-1': '#333333',
+				'black-2': '#33333380',
 				'dark-green': '#1E3B41',
 				purple: '#3f3cbb',
 				midnight: '#121063',
