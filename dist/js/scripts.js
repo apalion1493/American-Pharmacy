@@ -3759,9 +3759,9 @@ document.addEventListener('DOMContentLoaded', () => {
 		searchContainer.classList.toggle('active');
 	});
 
-	// document.addEventListener('click', (e) => {
-	// 	if (!searchContainer.contains(e.target)) { // Если клик не внутри searchContainer
-	// 		searchContainer.classList.remove('active'); // Убрать класс active
-	// 	}
-	// });
+	document.addEventListener('click', (e) => {
+		if (!searchContainer.contains(e.target)) { // Если клик не внутри searchContainer
+			searchContainer.classList.remove('active'); // Убрать класс active
+		}
+	});
 })
