@@ -1,6 +1,5 @@
 <header class="w-full flex items-center px-8 md:px-4 py-5 bg-white shadow-4xl">
-    <button class="w-8 h-8 min-w-8 mr-3 minlg:hidden text-none bg-primary flex flex-col gap-y-1 justify-center items-center rounded" aria-label="Open menu" @click="isMob = !isMob">
-        Burger
+    <button class="w-8 h-8 min-w-8 mr-3 minlg:hidden bg-primary flex flex-col gap-y-1 justify-center items-center rounded" aria-label="Open menu" @click="isMob = !isMob">
         <span :class="isMob ? 'rotate-45 transform translate-y-[6px]' : 'translate-y-0'" class="w-5 transition-all duration-300 border-t-[2px] border-white rounded-full block"></span>
         <span :class="isMob ? 'opacity-0' : ''" class="w-5 border-t-[2px] border-white rounded-full block"></span>
         <span :class="isMob ? '-rotate-45 transform -translate-y-[6px]' : 'translate-y-0'" class="w-5 transition-all duration-300 border-t-[2px] border-white rounded-full block"></span>
