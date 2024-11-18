@@ -1,8 +1,15 @@
-<div :class="isMob ? 'lg:left-0 lg:z-[999]' : 'lg:-left-[359px] lg:-z-20'" class="max-w-[285px] min-h-screen w-full bg-dark-green py-10 px-6 flex flex-col lg:fixed lg:top-0 lg:transition-all lg:w-full lg:h-screen">
-    <div class="flex flex-col h-full">
-        <a href="#">
-            <img src="img/new-icon/Logo-Meds-Warehouse.svg" alt="Logo">
-        </a>
+<div :class="isMob ? 'lg:left-0 lg:z-[999]' : 'lg:-left-[359px] lg:-z-20'" class="flex lg:fixed lg:top-0 lg:transition-all lg:w-full min-h-screen lg:h-screen">
+    <div class="flex flex-col max-w-[285px] min-w-[285px] lg:max-w-[285px] lg:min-w-[285px] lg:overflow-y-scroll px-6 md:px-4 md:pt-8 pt-6 pb-10 z-10 bg-dark-green">
+        <div class="flex items-center gap-x-2 w-full">
+            <a href="#">
+                <img src="img/new-icon/Logo-Meds-Warehouse.svg" alt="Logo">
+            </a>
+            <button class="w-8 h-8 min-w-8 ml-auto minlg:hidden bg-primary flex flex-col gap-y-1 justify-center items-center rounded" aria-label="Open menu" @click="isMob = !isMob">
+                <span :class="isMob ? 'rotate-45 transform translate-y-[6px]' : 'translate-y-0'" class="w-5 transition-all duration-300 border-t-[2px] border-white rounded-full block"></span>
+                <span :class="isMob ? 'opacity-0' : ''" class="w-5 border-t-[2px] border-white rounded-full block"></span>
+                <span :class="isMob ? '-rotate-45 transform -translate-y-[6px]' : 'translate-y-0'" class="w-5 transition-all duration-300 border-t-[2px] border-white rounded-full block"></span>
+            </button>
+        </div>
 
         <div class="my-16">
             <nav class="flex flex-col gap-y-4">
@@ -46,7 +53,6 @@
                 </a>
             </nav>
         </div>
-
         <a class="flex items-center px-3 py-2 mt-auto rounded-lg gap-x-3 transition-all hover:bg-gray-4" href="#">
             <!-- class for active item "bg-gray-4"-->
             <span class="w-8 min-w-8 h-8 flex items-center justify-center rounded overflow-hidden bg-primary">
