@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('components/head.html', {
+'title': 'Address Information'
+})
+
+<body class="">
+<main class="flex flex-col justify-between min-h-screen">
+
+    <div class="container-full flex min-h-screen bg-white2">
+        @@include('components/Navigation.html')
+        <div class="container-full w-full flex flex-col">
+            @@include('components/PA-Header.html')
+            <div class="flex flex-col w-full px-8 py-14">
+                <section class="flex items-end w-full mb-8">
+                    <div class="flex flex-col">
+                        <h1 class="mb-4 text-h5 font-semibold text-dark-green">Address Information</h1>
+                        <nav class="flex" aria-label="Breadcrumb">
+                            <ol class="inline-flex items-center flex-wrap space-x-2 md:space-x-2 rtl:space-x-reverse">
+                                <li class="inline-flex items-center">
+                                    <a href="index.html"
+                                       class="inline-flex items-center text-h10 font-medium text-gray-3 hover:text-primary dark:text-gray-400 dark:hover:text-white">
+                                        Home
+                                    </a>
+                                </li>
+                                <li aria-current="page">
+                                    <div class="flex items-center">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17"
+                                             viewBox="0 0 16 17" fill="none">
+                                            <path d="M6 3.5L11 8.5L6 13.5" stroke="#1E3B41" stroke-width="1.5"
+                                                  stroke-linecap="round"/>
+                                        </svg>
+                                        <span class="ms-2 text-h10 font-medium text-dark-green md:ms-2 dark:text-gray-400">Address Information</span>
+                                    </div>
+                                </li>
+                            </ol>
+                        </nav>
+                    </div>
+                    @@include('components/button-left-icon.html', {
+                    'title': 'Add New Address',
+                    'style': 'justify-center ml-auto self-end',
+                    })
+                </section>
+
+                <section class="bg-white rounded-lg shadow-5xl px-6 pt-6 pb-2 mb-8 flex flex-col">
+                    <div class="flex flex-col">
+                        <span class="text-md mb-5 block font-medium">My Address</span>
+                        <p class="text-base text-black-1">In this section, you can view  the addresses you have already added to your account.</p>
+                    </div>
+                    <div class="overflow-hidden w-full overflow-x-auto mt-6">
+                        <table class="w-full text-left">
+                            <thead class="border-b border-gray-5 py-2 uppercase text-base font-semibold">
+                            <tr>
+                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 uppercase w-[16%] font-medium">COUNTRY</th>
+                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 uppercase w-[16%] font-medium">CITY</th>
+                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 uppercase w-[16%] font-medium">COUNTY</th>
+                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 uppercase w-[16%] font-medium">STREET</th>
+                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 uppercase w-[20%] font-medium">HOUSE/FLAT NUMBER</th>
+                                <th scope="col" class="px-4 py-5 text-h11 text-black-2 uppercase w-[16%] font-medium">POSTCODE</th>
+                            </tr>
+                            </thead>
+                            <tbody class="border-[0]">
+                            <tr>
+                                <td class="p-4 py-6">
+                                    <span class="font-medium text-h10 leading-6 text-dark-green">Moldova</span>
+                                </td>
+                                <td class="p-4 py-6">
+                                    <span class="font-medium text-h10 leading-6 text-dark-green">Chisinau</span>
+                                </td>
+                                <td class="p-4 py-6">
+                                    <span class="font-medium text-h10 leading-6 text-dark-green">Botanica</span>
+                                </td>
+                                <td class="p-4 py-6">
+                                    <span class="font-medium text-h10 leading-6 text-dark-green">Valea-Morilor</span>
+                                </td>
+                                <td class="p-4 py-6">
+                                    <span class="font-medium text-h10 leading-6 text-dark-green">6/84</span>
+                                </td>
+                                <td class="p-4 py-6">
+                                    @@include('components/Status.html', {
+                                    'Style': 'bg-border-color-1 text-dark-green',
+                                    'Title': 'MD-2015',
+                                    })
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 py-6">
+                                    <span class="font-medium text-h10 leading-6 text-dark-green">Moldova</span>
+                                </td>
+                                <td class="p-4 py-6">
+                                    <span class="font-medium text-h10 leading-6 text-dark-green">Chisinau</span>
+                                </td>
+                                <td class="p-4 py-6">
+                                    <span class="font-medium text-h10 leading-6 text-dark-green">Botanica</span>
+                                </td>
+                                <td class="p-4 py-6">
+                                    <span class="font-medium text-h10 leading-6 text-dark-green">Valea-Morilor</span>
+                                </td>
+                                <td class="p-4 py-6">
+                                    <span class="font-medium text-h10 leading-6 text-dark-green">6/84</span>
+                                </td>
+                                <td class="p-4 py-6">
+                                    @@include('components/Status.html', {
+                                    'Style': 'bg-border-color-1 text-dark-green',
+                                    'Title': 'MD-2015',
+                                    })
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section class="bg-white rounded-lg shadow-5xl px-6 pt-6 pb-6 flex flex-col">
+                    <span class="text-md mb-5 block font-medium">Add Address</span>
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/input.html', {
+                            'type': 'text',
+                            'common-style': 'flex-1',
+                            'idInput': 'FirstNameId',
+                            'placeholder': 'John',
+                            'label': 'First Name',
+                            'styleInput': '',
+                            'styleLabel': 'red-star',
+                            'errorStyle': 'hidden'
+                            })
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/input.html', {
+                            'type': 'text',
+                            'common-style': 'flex-1',
+                            'idInput': 'LastNameId',
+                            'placeholder': 'Smith',
+                            'label': 'Last name',
+                            'styleInput': '',
+                            'styleLabel': 'red-star',
+                            'errorStyle': 'hidden'
+                            })
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/select-input.html', {
+                            'common-style': 'flex-1 w-full',
+                            'idSelect': 'custom-select1',
+                            'styleLabel': '',
+                            'label': 'Country'
+                            })
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/select-input.html', {
+                            'common-style': 'flex-1 w-full',
+                            'idSelect': 'custom-select2',
+                            'styleLabel': '',
+                            'label': 'City'
+                            })
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/input.html', {
+                            'type': 'text',
+                            'common-style': 'flex-1',
+                            'idInput': 'StreetId',
+                            'placeholder': '',
+                            'label': 'Street',
+                            'styleInput': '',
+                            'styleLabel': '',
+                            'errorStyle': 'hidden'
+                            })
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/input.html', {
+                            'type': 'text',
+                            'common-style': 'flex-1',
+                            'idInput': 'HouseId',
+                            'placeholder': '',
+                            'label': 'House/Flat Number or Name',
+                            'styleInput': '',
+                            'styleLabel': '',
+                            'errorStyle': 'hidden'
+                            })
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/input.html', {
+                            'type': 'text',
+                            'common-style': 'flex-1',
+                            'idInput': 'HouseId',
+                            'placeholder': '',
+                            'label': 'County',
+                            'styleInput': '',
+                            'styleLabel': '',
+                            'errorStyle': 'hidden'
+                            })
+                        </div>
+                        <div class="col-span-6 md:col-span-12">
+                            @@include('components/input.html', {
+                            'type': 'text',
+                            'common-style': 'flex-1',
+                            'idInput': 'PostcodeId',
+                            'placeholder': '',
+                            'label': 'Postcode',
+                            'styleInput': '',
+                            'styleLabel': '',
+                            'errorStyle': 'hidden'
+                            })
+                        </div>
+                        <div class="col-span-12 md:col-span-12">
+                            <button type="submit" class="button px-6 py-3 w-fit rounded-xl border transition group border-white hover:border-primary bg-primary inline-flex items-center justify-center hover:bg-transparent text-white hover:text-primary">
+                                <span class="font-medium">Add Delivery Address</span>
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+@@include('components/modal-window.html')
+@@include('components/wishlistBlock.html')
+@@include('components/script.html')
+</body>
+
+</html>
