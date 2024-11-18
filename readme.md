@@ -24,3 +24,4 @@ https://apalion1493.github.io/American-Pharmacy/dist/Login.html <br/>
 https://apalion1493.github.io/American-Pharmacy/dist/Forgot-Password.html <br/>
 https://apalion1493.github.io/American-Pharmacy/dist/Registration.html <br/>
 https://apalion1493.github.io/American-Pharmacy/dist/PA-orders-info.html <br/>
+https://apalion1493.github.io/American-Pharmacy/dist/PA-Personal-Information.html<br/>
